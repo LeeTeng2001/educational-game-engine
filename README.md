@@ -69,6 +69,8 @@ Designs including input system, audio system, physics, rendering and more.
 
 - Mini animation system.
 
+- Try to integrate EASTL in this project 
+
   
 
 ## Reading materials
