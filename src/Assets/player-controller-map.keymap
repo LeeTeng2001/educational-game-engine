@@ -1,0 +1,17 @@
+{
+  "MoveFront": [
+    {"Keyboard": "W"}
+  ],
+  "MoveBack": [
+    {"Keyboard": "W"}
+  ],
+  "TurnLeft": [
+    {"Keyboard": "A"}
+  ],
+  "TurnRight": [
+    {"Keyboard": "D"}
+  ],
+  "MoveFront": [
+    {"Keyboard": "W"}
+  ],
+}
