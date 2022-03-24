@@ -30,7 +30,7 @@
 
 
 Game::Game() = default;
-std::string Game::PROJECT_BASE = "/Users/lunafreya/Programming/CLionProjects/game-prog-in-cpp-project/src/Chapter11/";
+std::string Game::PROJECT_BASE = "/Users/lunafreya/Programming/CLionProjects/my-minimal-game-engine/src/";
 
 bool Game::Initialize() {
     // Take in a bitwise-or of all subsystems to initialize

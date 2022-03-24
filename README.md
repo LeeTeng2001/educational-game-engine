@@ -1,24 +1,49 @@
-# Task tracker
+<div align="center">
 
-## TODO
-- Come back for Chapter 4 AI pathfinding algorithm and tower defense game
-- The homework for chapter 4 is interesting! Could come back in the future. Use state machine in tower defense, build four in a row game
-- Exercise 6.2 point light support
-- Audio part, play with different filter and implement your own
-- Exercise 7, add doppler effect, implement virtual position for 3rd person
-- Exercise 8, add support for more controllers, hot reloading. Another exercise to add support for key mapping file
-- Exercise 10, add support for fps jumping
-- Exercise 12, morph between animations
+# Edu Engine
+
+Edu engine is a **minimal game engine**, intended to serve as an educational engine to showcase some essential design choices adopted by major engines like Unreal and Unity.
+
+Designs including input system, audio system, AI state machine, render pipeline and more.
+
+[Features](#features) •
+[Building](#building) •
+[Configuration](#configuration) •
+[Integrations](#third-party-integrations)
+
+</div>
+
+## Features
+
+Introduction
+
+## Building
+
+### *Step 1: Install dependencies*
+| Application | Description                                           | 
+|-------------|-------------------------------------------------------|
+| [FMOD]      | 3D spatial audio support                              |
+| [SDL2]      | Window manager, friendly & robust API                 |
+| [SDL-ttf]   | Font support (easy baking from ttf to OpenGL texture) |
+| [rapidjson] | Fast JSON file reader                                 |
+
+[FMOD]: https://www.fmod.com/
+[SDL2]: https://www.libsdl.org/
+[SDL-ttf]: https://github.com/libsdl-org/SDL_ttf
+[rapidjson]: https://rapidjson.org/
 
 
-## BUG
-- loop no sound when attached to audio mesh?
+### *Step 2: Configure project*
+- In src/Game.cpp, you should change the `std::string Game::PROJECT_BASE` to point to your src folder.
+- You probably want to specify your FMOD dynamic lib if you're not on Mac, the configuration should be modified in CMakeList.txt `file(GLOB FMOD_LIBRARIES "path-to-lib"")`
 
-## To test
-- Remember to change Game::BASE_PROJECT dir
+### *Step 3: Build project*
 
-## External Dependencies
-- RapidJSON
-- SDL2
-- SDL2_image
-- FMOD Studio (other platform support?)
+- Build project using cmake
+
+
+
+## Things that can be improved
+- **Render**: Different lighting models, deferred rendering algorithm.
+- **Audio**: Support for multiple filters.
+- **Control**: Support for multiple controllers, hot reloading, key-mapping files.
